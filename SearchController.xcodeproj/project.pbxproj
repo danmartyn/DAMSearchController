@@ -19,6 +19,8 @@
 		484A6D741C6A2FBD00BC5C59 /* syllable.csv in Resources */ = {isa = PBXBuildFile; fileRef = 484A6D6F1C6A2FBD00BC5C59 /* syllable.csv */; };
 		484A6D751C6A2FBD00BC5C59 /* title.csv in Resources */ = {isa = PBXBuildFile; fileRef = 484A6D701C6A2FBD00BC5C59 /* title.csv */; };
 		48D017C71C6A315F00526DCD /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D017C61C6A315F00526DCD /* Person.m */; };
+		48E116041C6A39F30072CAB7 /* DAMSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E116031C6A39F30072CAB7 /* DAMSearchController.m */; };
+		48E1160A1C6A40D80072CAB7 /* UIViewController+DAMSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E116091C6A40D80072CAB7 /* UIViewController+DAMSearchController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,10 @@
 		484A6D701C6A2FBD00BC5C59 /* title.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = title.csv; sourceTree = "<group>"; };
 		48D017C51C6A315F00526DCD /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		48D017C61C6A315F00526DCD /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		48E116021C6A39F30072CAB7 /* DAMSearchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAMSearchController.h; sourceTree = "<group>"; };
+		48E116031C6A39F30072CAB7 /* DAMSearchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAMSearchController.m; sourceTree = "<group>"; };
+		48E116081C6A40D80072CAB7 /* UIViewController+DAMSearchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+DAMSearchController.h"; sourceTree = "<group>"; };
+		48E116091C6A40D80072CAB7 /* UIViewController+DAMSearchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+DAMSearchController.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,8 +78,7 @@
 		484A6D521C6A2CB700BC5C59 /* SearchController */ = {
 			isa = PBXGroup;
 			children = (
-				484A6D561C6A2CB700BC5C59 /* AppDelegate.h */,
-				484A6D571C6A2CB700BC5C59 /* AppDelegate.m */,
+				48E116011C6A39C30072CAB7 /* Search Controller */,
 				48D017C81C6A32CA00526DCD /* Model */,
 				48D017CB1C6A32FB00526DCD /* View */,
 				48D017CC1C6A330700526DCD /* Controller */,
@@ -125,6 +130,8 @@
 		48D017CA1C6A32ED00526DCD /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				484A6D561C6A2CB700BC5C59 /* AppDelegate.h */,
+				484A6D571C6A2CB700BC5C59 /* AppDelegate.m */,
 				484A6D5F1C6A2CB700BC5C59 /* Assets.xcassets */,
 				484A6D611C6A2CB700BC5C59 /* LaunchScreen.storyboard */,
 				484A6D641C6A2CB700BC5C59 /* Info.plist */,
@@ -147,6 +154,17 @@
 				484A6D5A1C6A2CB700BC5C59 /* ViewController.m */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		48E116011C6A39C30072CAB7 /* Search Controller */ = {
+			isa = PBXGroup;
+			children = (
+				48E116021C6A39F30072CAB7 /* DAMSearchController.h */,
+				48E116031C6A39F30072CAB7 /* DAMSearchController.m */,
+				48E116081C6A40D80072CAB7 /* UIViewController+DAMSearchController.h */,
+				48E116091C6A40D80072CAB7 /* UIViewController+DAMSearchController.m */,
+			);
+			name = "Search Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,7 +243,9 @@
 			files = (
 				484A6D5B1C6A2CB700BC5C59 /* ViewController.m in Sources */,
 				484A6D581C6A2CB700BC5C59 /* AppDelegate.m in Sources */,
+				48E116041C6A39F30072CAB7 /* DAMSearchController.m in Sources */,
 				48D017C71C6A315F00526DCD /* Person.m in Sources */,
+				48E1160A1C6A40D80072CAB7 /* UIViewController+DAMSearchController.m in Sources */,
 				484A6D721C6A2FBD00BC5C59 /* NameGenerator.m in Sources */,
 				484A6D551C6A2CB700BC5C59 /* main.m in Sources */,
 			);
