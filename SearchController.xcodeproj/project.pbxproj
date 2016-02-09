@@ -13,6 +13,12 @@
 		484A6D5E1C6A2CB700BC5C59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 484A6D5C1C6A2CB700BC5C59 /* Main.storyboard */; };
 		484A6D601C6A2CB700BC5C59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 484A6D5F1C6A2CB700BC5C59 /* Assets.xcassets */; };
 		484A6D631C6A2CB700BC5C59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 484A6D611C6A2CB700BC5C59 /* LaunchScreen.storyboard */; };
+		484A6D711C6A2FBD00BC5C59 /* name.csv in Resources */ = {isa = PBXBuildFile; fileRef = 484A6D6B1C6A2FBD00BC5C59 /* name.csv */; };
+		484A6D721C6A2FBD00BC5C59 /* NameGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 484A6D6D1C6A2FBD00BC5C59 /* NameGenerator.m */; };
+		484A6D731C6A2FBD00BC5C59 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 484A6D6E1C6A2FBD00BC5C59 /* README */; };
+		484A6D741C6A2FBD00BC5C59 /* syllable.csv in Resources */ = {isa = PBXBuildFile; fileRef = 484A6D6F1C6A2FBD00BC5C59 /* syllable.csv */; };
+		484A6D751C6A2FBD00BC5C59 /* title.csv in Resources */ = {isa = PBXBuildFile; fileRef = 484A6D701C6A2FBD00BC5C59 /* title.csv */; };
+		48D017C71C6A315F00526DCD /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D017C61C6A315F00526DCD /* Person.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,14 @@
 		484A6D5F1C6A2CB700BC5C59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		484A6D621C6A2CB700BC5C59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		484A6D641C6A2CB700BC5C59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		484A6D6B1C6A2FBD00BC5C59 /* name.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = name.csv; sourceTree = "<group>"; };
+		484A6D6C1C6A2FBD00BC5C59 /* NameGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NameGenerator.h; sourceTree = "<group>"; };
+		484A6D6D1C6A2FBD00BC5C59 /* NameGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NameGenerator.m; sourceTree = "<group>"; };
+		484A6D6E1C6A2FBD00BC5C59 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		484A6D6F1C6A2FBD00BC5C59 /* syllable.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = syllable.csv; sourceTree = "<group>"; };
+		484A6D701C6A2FBD00BC5C59 /* title.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = title.csv; sourceTree = "<group>"; };
+		48D017C51C6A315F00526DCD /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		48D017C61C6A315F00526DCD /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,12 +74,11 @@
 			children = (
 				484A6D561C6A2CB700BC5C59 /* AppDelegate.h */,
 				484A6D571C6A2CB700BC5C59 /* AppDelegate.m */,
-				484A6D591C6A2CB700BC5C59 /* ViewController.h */,
-				484A6D5A1C6A2CB700BC5C59 /* ViewController.m */,
-				484A6D5C1C6A2CB700BC5C59 /* Main.storyboard */,
-				484A6D5F1C6A2CB700BC5C59 /* Assets.xcassets */,
-				484A6D611C6A2CB700BC5C59 /* LaunchScreen.storyboard */,
-				484A6D641C6A2CB700BC5C59 /* Info.plist */,
+				48D017C81C6A32CA00526DCD /* Model */,
+				48D017CB1C6A32FB00526DCD /* View */,
+				48D017CC1C6A330700526DCD /* Controller */,
+				48D017C91C6A32DC00526DCD /* 3rd Party */,
+				48D017CA1C6A32ED00526DCD /* Resources */,
 				484A6D531C6A2CB700BC5C59 /* Supporting Files */,
 			);
 			path = SearchController;
@@ -77,6 +90,63 @@
 				484A6D541C6A2CB700BC5C59 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		484A6D6A1C6A2FBD00BC5C59 /* Name Generator */ = {
+			isa = PBXGroup;
+			children = (
+				484A6D6B1C6A2FBD00BC5C59 /* name.csv */,
+				484A6D6C1C6A2FBD00BC5C59 /* NameGenerator.h */,
+				484A6D6D1C6A2FBD00BC5C59 /* NameGenerator.m */,
+				484A6D6E1C6A2FBD00BC5C59 /* README */,
+				484A6D6F1C6A2FBD00BC5C59 /* syllable.csv */,
+				484A6D701C6A2FBD00BC5C59 /* title.csv */,
+			);
+			path = "Name Generator";
+			sourceTree = "<group>";
+		};
+		48D017C81C6A32CA00526DCD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				48D017C51C6A315F00526DCD /* Person.h */,
+				48D017C61C6A315F00526DCD /* Person.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		48D017C91C6A32DC00526DCD /* 3rd Party */ = {
+			isa = PBXGroup;
+			children = (
+				484A6D6A1C6A2FBD00BC5C59 /* Name Generator */,
+			);
+			name = "3rd Party";
+			sourceTree = "<group>";
+		};
+		48D017CA1C6A32ED00526DCD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				484A6D5F1C6A2CB700BC5C59 /* Assets.xcassets */,
+				484A6D611C6A2CB700BC5C59 /* LaunchScreen.storyboard */,
+				484A6D641C6A2CB700BC5C59 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		48D017CB1C6A32FB00526DCD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				484A6D5C1C6A2CB700BC5C59 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		48D017CC1C6A330700526DCD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				484A6D591C6A2CB700BC5C59 /* ViewController.h */,
+				484A6D5A1C6A2CB700BC5C59 /* ViewController.m */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,9 +206,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				484A6D731C6A2FBD00BC5C59 /* README in Resources */,
 				484A6D631C6A2CB700BC5C59 /* LaunchScreen.storyboard in Resources */,
+				484A6D741C6A2FBD00BC5C59 /* syllable.csv in Resources */,
 				484A6D601C6A2CB700BC5C59 /* Assets.xcassets in Resources */,
 				484A6D5E1C6A2CB700BC5C59 /* Main.storyboard in Resources */,
+				484A6D711C6A2FBD00BC5C59 /* name.csv in Resources */,
+				484A6D751C6A2FBD00BC5C59 /* title.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,6 +225,8 @@
 			files = (
 				484A6D5B1C6A2CB700BC5C59 /* ViewController.m in Sources */,
 				484A6D581C6A2CB700BC5C59 /* AppDelegate.m in Sources */,
+				48D017C71C6A315F00526DCD /* Person.m in Sources */,
+				484A6D721C6A2FBD00BC5C59 /* NameGenerator.m in Sources */,
 				484A6D551C6A2CB700BC5C59 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,6 +339,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				INFOPLIST_FILE = SearchController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.danmartyn.SearchController;
@@ -274,6 +351,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				INFOPLIST_FILE = SearchController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.danmartyn.SearchController;
@@ -300,6 +378,7 @@
 				484A6D691C6A2CB700BC5C59 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
